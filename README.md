@@ -1,17 +1,6 @@
 
 # SimQ.out 
 
-### DEFAULT PARAMATERS
-
-- RNG: DEFAULT_RNG_SET, N_STREAMS
-
-- Model:
-	>DEFAULT_ARRIVAL_RATE
-	>DEFUALT_SERVICE_VAR
-	>DEFAULT_SERVICE_MIN
-	>DFAULT_PROC_COEFF
-
-
 ### DISTRIBUTIONS
 
 - Exponential (class): for sampling interarrival times and service times in MMc queue
