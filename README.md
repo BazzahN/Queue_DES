@@ -1,9 +1,7 @@
-#########
-SimQ.out 
-#########
-Includes:
 
-##DEFAULT PARAMATERS
+# SimQ.out 
+
+### DEFAULT PARAMATERS
 
 - RNG: DEFAULT_RNG_SET, N_STREAMS
 
@@ -14,13 +12,13 @@ Includes:
 	>DFAULT_PROC_COEFF
 
 
-##DISTRIBUTIONS
+### DISTRIBUTIONS
 
 - Exponential (class): for sampling interarrival times and service times in MMc queue
 - Normal (class): for sampling service times in GGc queue
 - Uniform (class): for thinning process in non-stationary arrival process for M(t)Mc
 
-##Utils
+### Utils
 
 - trace(func): utility function for printing output if TRACE=True
 
@@ -28,16 +26,16 @@ Includes:
 
 - MOnitoredResource (class-wrapper): Covers simpy's Resource class to obtain queu length measurements. 
 
-##Processes
+### Processes
 
 -queue_process (class): Creates a customer instance and commences their individual queueing process. 
 
-##Model
+### Model
 
 - MMn_Model (class): Model instance for the MMc queue
 - GGn_Model (class): Model instance for the GGc queue
 
-##Model Templates:
+### Model Templates:
 
 - MMn_templace (class): Container class for queue template class and queue arguments for MMc queue.
 -GGn_template (class): Container class for queue template class and queue arguments for GGc queue.
@@ -45,11 +43,11 @@ Includes:
 - model_constructor (func): Given a specified queue_type - a "MMn" or "GGn" string - and model arguments, this function creates an
 instance of that class.
 
-## Data Collection:
+### Data Collection:
 
 SimulationMetric (class): Handles the output from a queue simulation run(s)
 
-## Execute Simulation Meths
+### Execute Simulation Meths
 
 Note: These are the functions used by SimQ_out.py to interact with the discrete event simulations
 
